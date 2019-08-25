@@ -1,22 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>particles.js</title>
-    <meta
-      name="description"
-      content="particles.js is a lightweight JavaScript library for creating particles."
-    />
-    <meta name="author" content="Vincent Garreau" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
     <link rel="stylesheet" media="screen" href="css/style.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Lato:400,300');
+    </style>
   </head>
   <body>
-    <!-- particles.js container -->
-    <div id="particles-js"></div>
+    <div class="parent">
+      <div class="text">
+        <div id="content">
+          <div id="me">
+            <div id="top">
+              Jakub Dudek
+            </div>
+            <div id="bottom">
+              Software Engineer | Polack
+            </div>
+          </div>
+          <div id="contactInfo">
+            <div class="infoBox">
+              <a class="infoLink" href="mailto:me@yarabarla.com">
+                Email
+              </a>
+              <a class="infoLink" href="resume/resume.pdf">
+                Resum&#233;
+              </a>
+              <a class="infoLink" href="https://github.com/snakeyh">
+                GitHub
+              </a>
+              <a
+                class="infoLink"
+                href="https://www.linkedin.com/in/jakub-dudek-07490617a/"
+              >
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="particles-js" id="particles-js"></div>
+    </div>
     <!-- scripts -->
     <script src="./particles.js"></script>
     <script src="js/app.js"></script>
