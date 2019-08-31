@@ -191,11 +191,7 @@ canvas {
   height: 100%;
   width: 100%;
 }
-.text {
-  background-color: #fafafa;
-  -webkit-clip-path: polygon(0 0, 90% 0%, 50% 100%, 0% 100%);
-  clip-path: polygon(0 0, 90% 0%, 50% 100%, 0% 100%);
-}
+
 #content {
   position: relative;
   top: 40%;
@@ -228,29 +224,32 @@ canvas {
   color: #f36300;
   text-decoration: none;
 }
+.text {
+  background-color: #fafafa;
+  -webkit-clip-path: polygon(0 0, 80% 0%, 40% 100%, 0% 100%);
+  clip-path: polygon(0 0, 80% 0%, 40% 100%, 0% 100%);
+}
 .particles-js {
   background-color: #f36300;
   -webkit-clip-path: polygon(90% 0, 100% 0%, 100% 100%, 50% 100%);
-  clip-path: polygon(90% 0, 100% 0%, 100% 100%, 50% 100%);
+  clip-path: polygon(80% 0, 100% 0%, 100% 100%, 40% 100%);
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   #content {
     z-index: 1;
     position: relative;
     top: 40%;
-    left: 22%;
+    left: 25%;
     color: #000;
   }
   .text {
     z-index: 1;
     background-color: #fafafa;
-    -webkit-clip-path: polygon(0 0, 90% 0%, 50% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
   }
   .particles-js {
-    background-color: #f36300;
-    -webkit-clip-path: polygon(90% 0, 100% 0%, 100% 100%, 50% 100%);
-    clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%);
+    visibility: hidden;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -264,12 +263,10 @@ canvas {
   .text {
     z-index: 1;
     background-color: #fafafa;
-    -webkit-clip-path: polygon(0 0, 90% 0%, 50% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
   }
   .particles-js {
-    background-color: #f36300;
-    -webkit-clip-path: polygon(90% 0, 100% 0%, 100% 100%, 50% 100%);
-    clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%);
+    visibility: hidden;
   }
 }
